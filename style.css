@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FF917A;
+}
+
+fieldset {
+	width: 40%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+ 
+h1 {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+p {
+    margin-top: 0px;
+  }
+   
+  fieldset {
+    padding: 10px;
+  }
+   
+  legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+   
+  label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+  }
+   
+input {
+	margin-top: 8px;
+}
+
+button {
+	width: 5%;
+	height: 2%;
+}
+   
+  input:focus {
+    background: #eaeaea;
+  }
+   
+  input, textarea {
+    width: 249px;
+    background: #fff;
+  }
+   
+  textarea {
+    height: 100px;
+  }
+   
+  select {
+    width: 254px;
+  }
+   
+  input[type=checkbox] {
+    width: 10px;
+  }
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

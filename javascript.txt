@@ -1,0 +1,13 @@
+let euro = document.getElementById("euro");
+let dollar = document.getElementById("dollar");
+
+euro.addEventListener("input", function(){convPoids(this.id, this.value);});
+dollar.addEventListener("input", function(){convPoids(this.id, this.value);});
+
+function convPoids(id, valeur){
+    if(id == "euro"){
+        dollar.value = valeur * 1,206619;
+    }else if(id == "dollar"){
+        euro.value = valeur / 1,206619;	
+    }
+}

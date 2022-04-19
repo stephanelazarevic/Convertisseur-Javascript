@@ -1,0 +1,65 @@
+<HEAD>
+    <TITLE> Formulaire </TITLE>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+    <link rel = "stylesheet" href = "style.css">
+    <script src="script.js" async></script>
+	<Script language='javascript'>
+
+function ConvertirEnDollars()
+{
+if (isNaN(Form1.Euros.value) == true)
+{
+alert('Merci de saisir un nombre. Conversion Impossible.');
+Form1.Euros.value = '1';
+}
+else
+{
+Form1.Dollars.value = (Form1.Euros.value * 1.20).toFixed(2) ;
+}
+}
+
+function ConvertirEnEuros()
+{
+if (isNaN(Form1.Dollars.value) == true)
+{
+alert('Merci de saisir un nombre. Conversion Impossible.');
+Form1.Dollars.value = Form1.Euros.value * 0.83 ;
+}
+else
+{
+Form1.Euros.value = (Form1.Dollars.value / 1.20).toFixed(2) ;
+}
+}
+
+</Script>
+</HEAD>
+
+<BODY>
+	<br/>
+	<div id="bloc">
+    <h1> Convertisseur Euro/Dollar </h1><h1>💶💱💵</h1><HR ALIGN=CENTER WIDTH="300" color="black"><BR>
+    <form Name="Form1" action="index.html">
+
+    <section class="intro">
+        <h3><p><b> Veuillez saisir une somme à convertir en dollars ou en euros  </b></p></h3>
+    </section><br/>
+  
+    
+    <fieldset>
+      <legend>Convertisseur</legend>
+      
+      <label for="euro"> Euros : </label>
+      <input Name="Euros" type="text" placeholder="Entrer la somme a convertir en Dollars" onkeyup="ConvertirEnDollars()" Value=""><br/>
+     
+      <label for="dollar"> Dollars : </label>
+      <input Name="Dollars" type="text" placeholder="Entrer la somme a convertir en Euros" onkeyup="ConvertirEnEuros()" Value="">
+	
+	<a href="index.html"><img src="reset.png" width="5%"></a>
+
+    </fieldset>
+
+	<img src="img.png">
+	
+	</form>
+	</div>
+</BODY>
